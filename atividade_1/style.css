@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 300px;
+  height: 228px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 10px 10px 40px rgba(50,205,50, .7);
+}
+
+body form h1 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-family: 'Comfortaa', sans-serif;
+  text-align: center;
+  color: rgba(50,205,50);
+}
+
+body form input {
+  height: 35px;
+  width: 100%;
+  padding: 0 0 0 10%;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0,0,50, 1);
+}
+body form input::placeholder {
+  text-transform: uppercase;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+body form input + input {
+  margin-top: 15px;
+}
+
+body form button {
+  height: 35px;
+  font-size: 15px;
+  margin-bottom: 15px;
+  font-family: 'Comfortaa', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+body form input + button {
+  margin-top: 15px;
+  border: 1px solid rgba(0,0,50, 1);
+  background-color: rgba(50,205,50, .2);
+  transition: .5s;
+  cursor: pointer;
+}
+
+body h1 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-family: 'Comfortaa', sans-serif;
+  text-align: center;
+  font-weight: 700;
+}
+
+body p {
+  font-size: 15px;
+  margin-bottom: 15px;
+  font-family: 'Comfortaa', sans-serif;
+  margin: 10px 0 0 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+body .table {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0,0,50);
+}
+
+body .table hr {
+  margin: 0 10px 0 10px;
+}
+
+body div button {
+  width: 100%;
+  height: 35px;
+  margin-top: 15px;
+  border: 1px solid rgba(0,0,50, 1);
+  background-color: rgba(50,205,50, .2);
+  transition: .5s;
+  cursor: pointer;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: 'Comfortaa', sans-serif;
+  text-align: center;
+}
+
+.imc-morbit-obesity {
+  box-shadow: 10px 10px 40px rgba(28,28,28, .4) !important;
+  transition: all 1.5s;
+}
+
+.imc-morbit-obesity:hover {
+  box-shadow: 10px 10px 40px rgba(28,28,28, 1) !important;
+}
+
+.imc-serious-obesity {
+  box-shadow: 10px 10px 40px rgba(255,0,0, 0.4) !important;
+  transition: all 1.5s;
+}
+
+.imc-serious-obesity:hover {
+  box-shadow: 10px 10px 40px rgba(255,0,0, 0.7) !important;
+}
+
+.imc-obesity {
+  box-shadow: 10px 10px 40px rgba(255,165,0, .4) !important;
+  transition: all 1.5s;
+
+}
+
+.imc-obesity:hover {
+  box-shadow: 10px 10px 40px rgba(255,165,0, .7) !important;
+}
+
+.imc-overweight {
+  box-shadow: 10px 10px 40px rgba(255,255,0,.4) !important;
+  transition: all 1.5s;
+
+}
+
+.imc-overweight:hover {
+  box-shadow: 10px 10px 40px rgba(255,255,0,.7) !important;
+}
+
+.imc-normal {
+  box-shadow: 10px 10px 40px rgba(0,255,0, .4) !important;
+  transition: all 1s;
+
+}
+
+.imc-normal:hover {
+  box-shadow: 10px 10px 40px rgba(0,255,0, .7) !important;
+}
+
+.imc-moderate-thinness {
+  box-shadow: 10px 10px 40px rgba(75,0,130, .4) !important;
+  transition: all 1.5s;
+}
+
+.imc-light-thinness:hover {
+  box-shadow: 10px 10px 40px rgba(75,0,130, .7) !important;
+  transition: all 1.5s;
+}
+
+.imc-moderate-thinness {
+  box-shadow: 10px 10px 40px rgba(0,0,255, .4) !important;
+  transition: all 1.5s;
+}
+
+.imc-moderate-thinness:hover {
+  box-shadow: 10px 10px 40px rgba(0,0,255, .7) !important;
+  transition: all 1.5s;
+}
+
+.slide {
+  animation-name: slide;
+  animation-duration: .1s;
+}
+
+.slide-out {
+  animation-name: slide;
+  animation-duration: .1s;
+}
+
+@keyframes slide {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
